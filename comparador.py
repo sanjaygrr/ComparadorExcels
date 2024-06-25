@@ -92,8 +92,16 @@ def select_file():
 
 # Set up the GUI window
 root = tk.Tk()
-root.title("Procesador de Excel")
-root.geometry("400x200")
+root.title("Procesador de Excel Sanjaygrr®")
+root.geometry("400x250")
+
+# Create a label for the greeting
+greeting_label = tk.Label(root, text="Wena Tanoooo, aqui esta el programita :)", font=("Arial", 12))
+greeting_label.pack(pady=10)
+# Create a label for the greeting
+greeting_label = tk.Label(root, text="Asegurate tener el excel que te dije formteado como el ejemplo", font=("Arial", 12))
+greeting_label.pack(pady=10)
+
 
 # Create a button to select the Excel file
 open_button = tk.Button(root, text="Seleccionar Archivo Excel", command=select_file, height=2, width=20)
